@@ -30,7 +30,7 @@ export class IntroCodeComponent {
   comprovarCode(){
     const input = document.getElementById('code') as HTMLInputElement | null;
 
-    this.introCode= input?.value.toString()
+    this.introCode= input?.value.toString().toUpperCase()
 
     this.socket.emit('EnviarCodiPeli', this.introCode)
   }
