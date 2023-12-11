@@ -1,11 +1,11 @@
-<header>El plan b de bobby por si no funca el andriod</header>
+<header>El plan b de bobby por si no funca el android</header>
 
 <body>
 <form>
-  <label for="code">Introdueix un codi</label>
-  <input id="code" >
+  <label for="code">Introduce un código</label>
+  <input id="code" [(ngModel)]="introCode">
 
-  <button (click)="comprovarCode()" type="button">comprobar</button>
+  <button (click)="comprobarCode()" type="button">Comprobar</button>
 </form>
 
 <div *ngIf="codigoCorrecto !== undefined">
