@@ -10,7 +10,7 @@
   <button (click)="comprovarCode()" type="button">comprobar</button>
 </form>
 
-<div *ngIf="codigoCorrecto !== undefined">
-  Código correcto: {{ codigoCorrecto ? 'Sí' : 'No' }}
+<div *ngIf="codigoCorrecto == false">
+  codi incorrecte
 </div>
 </body>
