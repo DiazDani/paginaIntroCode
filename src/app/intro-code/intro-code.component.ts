@@ -16,7 +16,7 @@ export class IntroCodeComponent {
   codigoCorrecto: boolean | undefined;
   introCode: string|undefined
 
-  private socket = io('http://192.168.18.135:8888', { transports : ['websocket'] });
+  private socket = io('http://192.168.1.62:8888', { transports : ['websocket'] });
   constructor() {
     this.socket.on('hello', (args) => {
       console.log(args);
